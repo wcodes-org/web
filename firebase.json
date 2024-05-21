@@ -1,0 +1,72 @@
+{
+	"hosting": {
+		"public": "public",
+		"ignore": [
+			".htaccess",
+			".git/**"
+		],
+		"redirects": [ {
+				"source" : "/aboutme",
+				"destination" : "/about_me",
+				"type" : 301
+			}, {
+				"source" : "/patent",
+				"destination" : "/patents",
+				"type" : 301
+			}, {
+				"source" : "/app/location",
+				"destination" : "https://location.wcodes.org",
+				"type" : 302
+			}, {
+				"source" : "/facebook",
+				"destination" : "https://facebook.com/wcodesorg",
+				"type" : 302
+			}, {
+				"source" : "/twitter",
+				"destination" : "https://twitter.com/wcodesorg",
+				"type" : 302
+			}, {
+				"source" : "/gplus",
+				"destination" : "https://plus.google.com/+wcodesorg",
+				"type" : 302
+			}, {
+				"source" : "/wolo",
+				"destination" : "https://wolo.codes/about",
+				"type" : 302
+			}
+		],
+		"rewrites": [ {
+				"source": "/patents.json",
+				"destination": "/patents/index.json"
+			}, {
+				"source": "/location.json",
+				"destination": "/location/index.json"
+			}
+		],
+		"headers": [ {
+				"source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+				"headers" : [ {
+						"key" : "Access-Control-Allow-Origin",
+						"value" : "*"
+					}
+				]
+			}, {
+				"source" : "**/*.@(jpg|jpeg|gif|png|svg)",
+				"headers" : [ {
+						"key" : "Cache-Control",
+						"value" : "max-age=7200"
+					}
+				]
+			}, {
+				"source" : "404.html",
+				"headers" : [ {
+						"key" : "Cache-Control",
+						"value" : "max-age=300"
+					}
+				]
+			}
+		],
+		"cleanUrls": true,
+		"trailingSlash": false
+	}
+}
