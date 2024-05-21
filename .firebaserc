@@ -1,5 +1,6 @@
 {
   "projects": {
-    "prod": "wcode-0"
+    "prod": "wcode-0",
+    "default": "wcode-0"
   }
 }
