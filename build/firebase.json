@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "./public",
+    "public": ".",
     "ignore": [
       ".htaccess",
       ".git/**"
@@ -38,7 +38,7 @@
       },
       {
         "source": "/wolo",
-        "destination": "https://wolo.codes/about",
+        "destination": "https://wolo.codes",
         "type": 302
       }
     ],
