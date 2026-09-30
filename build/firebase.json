@@ -44,12 +44,20 @@
     ],
     "rewrites": [
       {
+        "source": "/about.json",
+        "destination": "/about/index.json"
+      },
+      {
         "source": "/patents.json",
         "destination": "/patents/index.json"
       },
       {
         "source": "/location.json",
         "destination": "/location/index.json"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
     ],
     "headers": [
