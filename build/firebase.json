@@ -3,9 +3,15 @@
     "public": ".",
     "ignore": [
       ".htaccess",
-      ".git/**"
+      ".git/**",
+      ".github/**"
     ],
     "redirects": [
+      {
+        "source": "/root.json",
+        "destination": "/",
+        "type": 302
+      },
       {
         "source": "/aboutme",
         "destination": "/about_me",
@@ -43,10 +49,6 @@
       }
     ],
     "rewrites": [
-      {
-        "source": "/about.json",
-        "destination": "/about/index.json"
-      },
       {
         "source": "/patents.json",
         "destination": "/patents/index.json"
