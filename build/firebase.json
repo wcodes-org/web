@@ -18,6 +18,16 @@
         "type": 301
       },
       {
+        "source": "/concept",
+        "destination": "/about_concept",
+        "type": 301
+      },
+      {
+        "source": "/credits",
+        "destination": "/about_site",
+        "type": 301
+      },
+      {
         "source": "/patent",
         "destination": "/patents",
         "type": 301
